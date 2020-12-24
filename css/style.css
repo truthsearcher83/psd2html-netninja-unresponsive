@@ -1,0 +1,297 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    font-family: arial;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*//////////// end css reset //////////*/
+
+
+.container {
+    width:100%;
+    max-width:960px;
+    margin: 0 auto;
+}
+header{
+    background-color: #151515;
+    
+}
+
+.logo  {
+      vertical-align: middle  
+}
+
+nav {
+    display:inline-block;
+    color:white;
+    width:calc(100% - 300px);
+    text-align:right;   
+}
+
+nav li {
+    display:inline-block;
+             
+}
+
+nav li span {
+    color:lawngreen;
+}
+
+.hero {
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    color:white;
+}
+
+.hero h1 {
+    font-size:2.5rem;
+    text-transform:uppercase;
+    padding-top:2.5rem
+}
+
+.hero p {
+    padding-top:.5rem;
+    margin-bottom:1rem
+}
+
+.hero button {
+    width:200px;
+    background-color: darkgreen;
+    padding:.5rem;
+    color:white;
+    text-transform:uppercase;
+    border-radius:1px
+}
+
+.middle {
+    margin-top: 1.2rem
+}
+
+
+
+.middle ul li {
+    display:inline-block;
+    width:33%;
+    text-align:center;
+    color:grey;
+}
+
+.middle ul li h2 {
+    margin-top:2rem
+}
+
+.middle li p {
+    font-size:14px;
+    margin-top:1rem;
+    padding-right:2rem
+}
+.testimonial {
+    margin-top:5rem;
+}
+.testimonial .container {
+    border-top:2px solid grey ;
+}
+
+.testimonial h2 {
+    
+    position:relative;
+    top:-20px;
+    margin: 0 auto;
+    background-color: greenyellow;
+    width:200px;
+    padding:10px;
+    color:white;
+    
+}
+.testimonial-quote {
+  margin-top:4rem;  
+}
+
+.testimonial .client-head  {
+    float: left;
+}
+
+.contact {
+    clear:both;
+     margin-top:5rem;
+}
+
+
+.contact .container {
+    border-top:2px solid grey ;
+}
+
+.contact h2 {
+    position:relative;
+    top:-20px;
+    margin: 0 auto;
+    background-color: greenyellow;
+    width:200px;
+    padding:10px;
+    color:white;   
+}
+
+.contact ul {
+    display:inline-block;
+    width:50%;
+    margin:0 50px 0 0;
+    vertical-align: top;
+}
+
+.contact ul li {
+   list-style:none
+}
+
+
+
+ .contact li:before{
+           content: ''; 
+           display:inline-block;
+           width:40px;
+           height:40px;
+           background: url(../images/logo-sprite.png) no-repeat;
+               
+         }
+          .contact li:nth-child(1):before{
+    background-position: -158px 10px;
+}
+
+        .contact li:nth-child(2):before{
+    background-position: -198px 10px;
+}
+
+    .contact li:nth-child(3):before{
+    background-position: -238px 0;
+}
+
+#social-nav{
+    clear: both;
+    position: relative;
+    top: -40px;
+}
+#social-nav li{
+    display:inline-block;
+    width: 40px;
+    height: 30px;
+    background: url(../images/logo-sprite.png) no-repeat;
+    text-indent: -10000px;
+}
+
+#social-nav li:nth-child(2){
+    background-position: -40px 0;
+}
+
+#social-nav li:nth-child(3){
+    background-position: -80px 0;
+}
+
+#social-nav li:nth-child(4){
+    background-position: -120px 0;
+}
+
+#social-nav a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
